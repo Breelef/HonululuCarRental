@@ -10,7 +10,7 @@ public class Sport extends Vehicle{
         HP = hp;
     }
 
-    public Sport(){
+    public Sport() {
     }
     @Override
     public String toString(){
