@@ -7,8 +7,8 @@ public class Luxury extends Vehicle{
     boolean cruiseControl;
     String seats;
 
-    public Luxury(String b, String m, String f, int nr, int year, int month, int str, boolean g, boolean ac, boolean cc, String s){
-        super(b, m, f, nr, year, month);
+    public Luxury(String b, String m, String f, int nr, int year, int month, int om, int str, boolean g, boolean ac, boolean cc, String s){
+        super(b, m, f, nr, year, month, om);
         size = str;
         gear = g;
         airCondition = ac;
@@ -27,6 +27,6 @@ public class Luxury extends Vehicle{
             g = "Automat gear";
         return ("Mærke: "+brand+"\nModel: "+model+"\nBenzin type: "+fuel+"\nGear type: "+g+"\nAir condition: "+airCondition+
                 "\nCruise Control: "+cruiseControl+"\nType Sæde: "+seats+"\nStørrelse på bilen: "+size+"cm"+
-                "\nRegistreringsnummer: " +regNr+"\nRegistreringsdato: "+regMonth+"/"+regYear);
+                "\nRegistreringsnummer: " +regNr+"\nRegistreringsdato: "+regMonth+"/"+regYear+"\nBilen har kørt: "+odoMeter+"km");
     }
 }
